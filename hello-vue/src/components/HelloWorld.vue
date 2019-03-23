@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-
     <h2>{{ helloMessage }}</h2>
   </div>
 </template>
@@ -12,15 +11,13 @@ export default {
   data() {
     return {
       helloMessage: ''
-  }
+    }
   },
   props: {
     msg: String,
   },
   mounted() {
-    console.log('mtd')
     this.$hello_api.getHelloMessage().then(resp => {
-      console.log('resp', resp)
       this.helloMessage = resp.message
     })
   }
