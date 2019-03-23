@@ -1,5 +1,8 @@
 var express = require('express')
 var routes = require('./routes/routes.js')
+var path = require('path')
+
+app.use(express.static(path.join(__dirname, 'hello-vue', 'dist')))
 
 var app = express()
 app.use('/api', routes)
@@ -11,5 +14,4 @@ var server = app.listen(process.env.PORT || 3000, function() {
 
 
 
-// var path = require('path')
-//  app.use(express.static(path.join(__dirname, 'hello-vue', 'dist')))
+
