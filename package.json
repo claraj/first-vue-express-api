@@ -1,0 +1,13 @@
+{
+    "name": "hello-api",
+    "description": "Hello World API",
+    "author": "Clara",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.5",
+        "express": "^4.16.4"
+    },
+    "scripts": {
+        "start": "node ./server.js" 
+    }
+}
