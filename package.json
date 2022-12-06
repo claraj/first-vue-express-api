@@ -3,7 +3,7 @@
     "description": "Hello World API",
     "author": "Clara",
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.18.2"
     },
     "scripts": {
         "start": "node ./server.js"
